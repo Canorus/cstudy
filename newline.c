@@ -1,3 +1,4 @@
+/*
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -15,4 +16,18 @@ int main(void){
 			++n;
 		}
 	}
+}
+*/
+#include <stdio.h>
+#include <string.h>
+int main(void) {
+      int index = 0;
+      char input[101];
+      while (gets(input)) {
+            if (input[0] == '\0' || input[0] == ' ' || input[strlen(input) - 1] == ' ' ) {
+                  break;
+            }
+            puts(input);
+      }
+      return 0;
 }
